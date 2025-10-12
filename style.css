@@ -1,8 +1,57 @@
-html, body {
+body {
+  font-family: "Fira Code", monospace;
+  background-color: #000000; /* sfondo nero */
+  color: #39ff14;            /* verde neon per effetto terminale */
   margin: 0;
   padding: 0;
+  padding-top: 100px; /* se l'header è alto circa 60px */
 }
 
-canvas {
-  display: block;
+
+header {
+  position: fixed;   /* lo rende fisso */
+  top: 0;            /* posizione in alto */
+  left: 0;           /* allinea a sinistra */
+  width: 100%;       /* occupa tutta la larghezza */
+  background: #000000;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  z-index: 1000;     /* assicura che sia sopra altri elementi */
 }
+
+
+main {
+  width: 100%;
+  max-width: 10000px;
+  margin: 2rem auto;
+}
+
+.chart-container {
+  background: #111111;  /* grigio scuro */
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #39ff14; /* bordo verde neon */
+}
+
+
+.chart-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#results {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+
+#textResults p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #39ff14;
+}
+
+
+
+
