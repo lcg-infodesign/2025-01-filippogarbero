@@ -125,7 +125,7 @@ function setup() {
      filteredRows.push(rowObj);
 
   }
-
+}
   //estrarre i valori numerici 
   col0Values = filteredRows.map(row=> Number(row.columns0));
   col0Values = filteredRows.map(row=> Number(row.columns1));
@@ -133,7 +133,12 @@ function setup() {
   col0Values = filteredRows.map(row=> Number(row.columns3));
   col0Values = filteredRows.map(row=> Number(row.columns4));
 
-}
+
+  //f0.1 calcolo media colonna 0
+  average0 = calcAvg(col0Values);
+  print("average col0:", average0);
+  
+
 }
 
 function draw() {
